@@ -1,0 +1,52 @@
+.sidenav{
+  position:fixed;
+  height: 100%;
+  
+  ul{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -60%);
+
+    li{
+      width: 60px;
+      position: relative;
+      list-style: none ;
+      cursor:pointer;
+      margin: 30px 0;
+      padding: 5px;
+      border-radius: 10px;
+      
+      background-color: #d4d4d4;
+      
+      
+      
+      span{
+        transition: all 1s ease;
+        border-radius: 5px;
+        padding: 5px 15px;
+        font-weight: bolder;
+        top: 20%;
+        left: 0%;
+        z-index: -1;
+        position: absolute;
+        transform: translateX(0%);
+        color: #fff;
+        background-color: #fff;
+        text-align: center;
+        width: 110px;
+      }
+      
+      &:hover{
+        span{
+          transform: translateX(70%);
+          background-color: #000;
+
+        }
+        
+
+  
+
+      }
+    }
+  }
+}
